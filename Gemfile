@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem "activesupport", ">= 6.1"
 gem 'jekyll'
 
 # Core plugins that directly affect site building
