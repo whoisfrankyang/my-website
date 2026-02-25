@@ -26,7 +26,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    {% assign paper_url = nil %}
+    {% assign paper_url = null %}
     {% if entry.paper_url %}
       {% assign paper_url = entry.paper_url %}
     {% elsif entry.pdf %}
@@ -60,11 +60,11 @@
         {% assign author_array_limit = site.max_author_limit %}
       {% endif %}
 
-      {% assign equal_contrib_authors = nil %}
+      {% assign equal_contrib_authors = null %}
       {% if entry.equal_contrib_authors %}
         {% assign equal_contrib_authors = entry.equal_contrib_authors | split: ';' %}
       {% endif %}
-      {% assign advisor_authors = nil %}
+      {% assign advisor_authors = null %}
       {% if entry.advisor_authors %}
         {% assign advisor_authors = entry.advisor_authors | split: ';' %}
       {% endif %}
